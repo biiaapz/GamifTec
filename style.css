@@ -19,9 +19,9 @@ html {
 
 .container-grid {
   width: 80vw;
-  max-width: 1400px;
+  max-width: 1475px;
 
-  margin: 0 auto;
+  margin-top: 30px;
 }
 
 
@@ -90,13 +90,14 @@ nav.menu {
 
   text-decoration-color: white;
 }
+  
 
 
 #sobre {
   height: 800px;
 
   padding-bottom: 400px;
-  padding-top: 1000px;
+  padding-top: 900px;
   padding-right: 20%;
   padding-left: 20%;
 
@@ -111,14 +112,14 @@ nav.menu {
 h2 {
   font-family: "Anta";
   font-size: 30px;
-  color: white;
+  color: black;
 
 }
 
 #sobre p {
   font-family: "Ubuntu";
   font-size: 17px;
-  color: white;
+  color: black;
   padding-top: 3%;
 }
 
@@ -131,7 +132,7 @@ body {
 }
 
 body {
-  background-color: #20044a;
+  background-color: #f2f2f2;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
@@ -151,7 +152,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100hv;
-  background: linear-gradient(90deg #20044a);
+  background: linear-gradient(90deg #f2f2f2);
 }
 
 .lista-cards {
@@ -168,11 +169,12 @@ body {
   position: relative;
   margin-left: 30px;
   flex-direction: row;
-  background-color: #ffff;
+  background-color: #410996;
   border-radius: 3px;
-  box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 35px 80px rgba(255, 255, 255, 0.15);
   transition: 0.5s;
   overflow-y: clip;
+  
 }
 
 .card:hover {
@@ -199,6 +201,10 @@ body {
   object-fit: cover;
 }
 
+  .img-box p {
+    color: #ffff;
+  }
+
 .card .content {
   display: flex;
   flex-direction: row;
@@ -217,13 +223,13 @@ body {
 .card:hover .content {
   top: 150px;
   height: 250px;
-
+color: #ffff;
 }
 
 .card .read-more {
   background: linear-gradient(90deg #20044a, #ffff);
   padding: 17px;
-  color: #000;
+  color: #ffff;
  
   text-decoration: none;
   border-radius: 8px;
@@ -287,7 +293,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
 
-  background-color: #0000007a;
+  background-color: #20044A;
 
   padding: 60px;
   border-radius: 15px;
@@ -398,6 +404,7 @@ body {
   background-color: #8763e7;
 
 }
+@media screen and (max-width: 1080px) {}
 
 .container-grid p {
   font-family: "Fjalla One";
@@ -414,7 +421,7 @@ body {
 
 footer {
   height: 400px;
-  background-color: #ffffff;
+  background-color: #EDDC43;
 
 }
 
@@ -458,7 +465,9 @@ footer .container-grid {
   display: flex;
   justify-content: space-between;
   color: #000;
-  padding-bottom: 10px;
+  padding left: 10px;
+  
+ 
 }
 
 .icones-redes a {
@@ -514,36 +523,181 @@ footer .container-grid {
   }
 }
 
-@media screen and (max-width: 1080px) {
-  .container-cards {
-    flex-wrap: wrap;
+  @media screen and (max-width: 1080px) {
+    .container-cards {
+      flex-wrap: wrap;
+    }
+  
+    .card {
+      height: 400px;
+  
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 40%;
+    }
+  
+    footer {
+      height: unset;
+    }
+  
+    footer .container-grid {
+      padding: 350px 0;
+      flex-direction: column;
+    }
+  
+    footer img {
+      margin-bottom: 100px;
+    }
+  
+    footer p {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  
+    .redes-sociais {
+      align-items: center;
+    }
   }
-
-  .card {
-    height: 400px;
-
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 40%;
+  
+  @media screen and (max-width: 800px) {
+    .card {
+      flex-basis: 45%;
+    }
   }
-
-  footer {
-    height: unset;
-    padding: 20px;
+  
+  @media screen and (max-width: 700px) {
+    #sobre {
+      height: unset;
+      margin-bottom: 40px;
+    }
+  
+    #sobre h2 {
+      margin-bottom: 50px;
+    }
+  
+    #sobre p {
+      margin-bottom: 30px;
+    }
+  
+    #cases,
+    #contato {
+      margin-bottom: unset;
+    }
+  
+    #portfolio a {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .campo,
+    .campo-descricao,
+    #contato form button {
+      width: 75%;
+    }
   }
-
-  footer .container-grid {
-    padding: 350px 0;
-    flex-direction: column;
+  
+  @media screen and (max-width: 520px) {
+    .container-grid {
+      width: 90%;
+    }
+  
+    header img {
+      width: 200px;
+    }
+  
+    .banner {
+      background-size: cover;
+    }
+  
+    .conteudo-banner p {
+      font-size: 24px;
+    }
+  
+    nav.menu {
+      width: 100%;
+  
+      display: none;
+    }
+  
+    #sobre {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  
+    #sobre p {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  
+    #cases.container-grid {
+      width: 100%;
+      margin: unset;
+    }
+  
+    .container-cards {
+      flex-wrap: nowrap;
+  
+      gap: 40px;
+  
+      overflow-x: auto;
+    }
+  
+    .card {
+      height: 400px;
+      width: 280px;
+  
+      flex-basis: unset;
+    }
+  
+    .card:first-child {
+      margin-left: 30px;
+  
+    }
+  
+    .card:last-child {
+      margin-right: 30px;
+  
+    }
+  
+    #portfolio {
+      margin-bottom: 0px;
+    }
+  
+    #contato {
+      padding-top: 150px;
+      background-color: var(--roxo-gamefica);
+      color: white;
+    }
+  
+    #contato h2 {
+      margin-bottom: 0;
+    }
+  
+    #contato form {
+      width: 100%;
+      border-radius: 0;
+    }
+  
   }
-
-  footer img {
-    margin-bottom: 300px;
+  
+  @media screen and (max-width:400px) {
+    header img {
+      width: 160px;
+    }
+  
+    header svg {
+      width: 40px;
+    }
+  
+    .conteudo-banner p {
+      font-size: 20px;
+    }
+  
+    footer img {
+      width: 200px;
+    }
   }
-
-  footer p {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 40px;
-  }
+  
 }
