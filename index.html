@@ -22,7 +22,7 @@
 
 </head>
 
-<body>
+<body onload="carregarCases()">
     <div class="banner">
         <header>
             <nav class="menu container-grid">
@@ -153,31 +153,26 @@
                         <label for="campo-CPF">CPF</label>
                         <input id="campo-CPF" placeholder="... ... ... .." type="CPF">
                     </div>
+                 
                     <div class="campo">
-                        <label for="campo-RG">RG</label>
-                        <input id="campo-RG" placeholder="... ... ... ." type="RG">
+                        <label for="campo-email">Email</label>
+                        <input id="campo-email" placeholder="Email@.com" type="Email">
                     </div>
                 </div>
 
                 <div class="linha">
                     <div class="campo">
-                        <label for="campo-email">Email</label>
-                        <input id="campo-email" placeholder="Email@.com" type="Email">
-                    </div>
-                    <div class="campo">
-                        <label for="campo-email"> Confirmar Email</label>
-                        <input id="campo-email" placeholder="Email@.com" type="Email">
-                    </div>
-                    <div class="campo">
                         <label for="campo-celular">Celular</label>
                         <input id="campo-celular" placeholder="+5511" type="celular">
                     </div>
+
+                    <div class="campo">
+                        <label for="descrição">descrição</label>
+                        <input id="campo-descrição" placeholder="" type="telefone">
+                    </div>
                 </div>
 
-                <div class="campo">
-                    <label for="campo-telefone">Telefone</label>
-                    <input id="campo-telefone" placeholder="" type="telefone">
-                </div>
+               
                 <div class="botao-form">
                     <button type="submit">Enviar</button>
                 </div>
