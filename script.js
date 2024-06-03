@@ -3,7 +3,6 @@ function solicitarOrcamento(event) {
     //pegar os valores dos inputs
     let valorNome = document.getElementById("campo-nome").value
     let valorEmail = document.getElementById("campo-email").value
-    let valorCPF = document.getElementById("campo-CPF").value
     let valorCelular = document.getElementById("campo-Celular").value
     let valorDescricao = document.getElementById("campo-texto").value
 
@@ -11,7 +10,6 @@ function solicitarOrcamento(event) {
     let dadosForm = {
         nome: valorNome,
         email: valorEmail,
-        valorCPF,
         valorCelular,
         descricao: valorDescricao
     }

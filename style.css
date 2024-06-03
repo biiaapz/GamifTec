@@ -96,7 +96,7 @@ nav.menu {
   height: 800px;
 
   padding-bottom: 400px;
-  padding-top: 900px;
+  padding-top: 1000px;
   padding-right: 20%;
   padding-left: 20%;
 
@@ -269,6 +269,10 @@ body {
   transition: 200ms;
 }
 
+.linha1{
+;
+  
+}
 #contato {
   text-align: center;
   padding: 5%;
