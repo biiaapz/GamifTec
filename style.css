@@ -270,7 +270,7 @@ body {
 }
 
 .linha1{
-;
+
   
 }
 #contato {
@@ -366,9 +366,9 @@ body {
 
 }
 
-.campo label,
-.campo-descricacao {
-  margin-bottom: 15px;
+.campo-descricao{
+background-color: #20044A;
+  
 }
 
 .xcampo input,
@@ -422,7 +422,7 @@ body {
 }
 
 footer {
-  height: 400px;
+  height: 500px;
   background-color: #EDDC43;
 
 }
@@ -441,11 +441,19 @@ footer .container-grid {
   font-family: "Anta";
   font-size: 24px;
 }
+.logotipo{
+  padding-left: 80%;
+  padding-top: 10%;
+}
 
+.logo-4{
+  padding-top: 15%;
+}
 .alinhamento-icon {
   height: 100%;
   width: 100%;
   display: flex;
+  padding-right: 15%;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
@@ -463,14 +471,7 @@ footer .container-grid {
 
 
 
-.logo-4 {
-  display: flex;
-  justify-content: space-between;
-  color: #000;
-  padding left: 10px;
 
-}
-  
 .icones-redes a {
   color: #290278;
 }
